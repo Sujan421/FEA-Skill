@@ -1,0 +1,70 @@
+@import './_typography';
+@import './_color';
+@import './_herosection';
+@import './_latestnews';
+@import './_ourmission';
+@import './_beneficiaries';
+@import './_founders';
+@import './_gallery';
+@import './_footer';
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, 'sans-serif';
+}
+
+body{
+    background-color: $bg-1 !important;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.title{
+    font-size: $title-font ;
+    color: $main-color;
+    text-transform: uppercase;
+    font-weight: $mid;
+
+    @media screen and (min-width:375px) and (max-width:768px){
+        font-size: $base-font ;
+    }
+}
+
+.wrapper{
+    margin: 0 120px;
+}
+
+.tags{
+    display: flex;
+    gap: 40px;
+    max-width: 20px 0 16px 0;
+    span{
+        text-transform: uppercase;
+        font-size: $base-font;
+        font-weight: $mid;
+        color: $tag-color;
+    }
+    
+    
+}
+header{
+    margin-left:60px;
+    padding-right: 120px;
+    padding-left: 60px;
+    background-color: white;
+  
+    .mobile-top{
+        display: none;
+    }
+}
+
+
+
+
+
+@import './_bootstrapoverride';
+@import './_mediaqueries';

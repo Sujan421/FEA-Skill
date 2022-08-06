@@ -1,0 +1,63 @@
+#beneficiaries{
+     background-color: $bg-main;
+     padding: 40px 0;
+     overflow-x: hidden;
+
+     .wrapper{
+        @media screen and (max-width:768px) {
+            margin-right: 0;
+        }
+    }
+
+     .content{
+        display: flex;
+        margin-top: 16px;
+        gap: 16px;
+        overflow-x: scroll;
+     }
+
+     .content::-webkit-scrollbar {
+        display: none;
+      }
+}
+
+.title{
+    margin: 0;
+}
+
+
+
+
+.b-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 202px;
+
+    
+@media screen and (min-width:769px){
+    max-width: 268px;
+}
+
+    img{
+        min-height: 269px;
+        object-fit: cover;
+        @media screen and (min-width:769px){
+            min-height: 357px;
+        }
+    }
+
+    p{
+        margin: 0;
+        margin-top: 12px;
+        font-size: $normal-font;
+        font-weight: $normal;
+        color:$font-color ;
+        font-family:  $font-1;
+
+        @media screen and (max-width:768px) {
+            font-size: $base-font;
+            
+        }
+    }
+}
+

@@ -1,0 +1,150 @@
+.social-top{
+    display: flex;
+    justify-content: flex-end;
+    background-color: $bg-1 ;
+    height: 60px;
+    
+    &__container{
+        margin-right: 120px;
+        display: flex;
+        align-items: center;
+    span{
+        margin-right: 32px;
+
+
+
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    
+}
+}
+
+#hero{
+    background-color: $bg-1;
+    position: relative;
+    overflow-x: hidden;
+
+    &:before{
+        content: '';
+        position: absolute;
+        background-color: $bg-main;
+        top: 0;
+        left: 60px;
+        right: 0;
+        bottom: 340px ;
+    }
+    
+    header{
+        height: 152px;
+        
+    }
+
+    .hero-content{
+        padding-top: 40px;
+        position: relative;
+        padding-bottom: 80px;
+        display: flex;
+        align-items: flex-end;
+
+        &__text{
+            font-size:$heading-h1;
+            color: $main-color;
+            flex-basis: 70%;
+            position: relative;
+        }
+
+        &__btn{
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            margin-bottom: 16px;
+
+            button{
+                all: unset;
+                padding: 24px;
+                border: 1px solid $border-color;
+                font-size: $normal;
+                font-weight: $mid;
+                color: $font-color;
+
+                &:last-child{
+                    border-left: none;
+                }
+            }
+        }
+    }
+
+    .hero-imagecontainer{
+        position: relative;
+        left: 120px;
+        width: 100%;
+        padding-bottom: 60px;
+        img{
+            height: 565px;
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width:375px) and (max-width:768px) {
+
+    .wrapper{
+        margin: 0 32px;
+    }
+
+// <--herosection-->
+   .social-top{
+    height: 56px;
+
+    &__container{
+        margin-right: 32px;
+
+        span{
+            margin-right: 20px;
+        }
+   }
+}
+
+   #hero{
+    &:before{
+        left: 16px;
+        bottom: 128px;
+    }
+
+    .hero-content{
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 40px;
+        &__text{
+            font-size: $heading-h3;
+            font-family:  $font-1;
+            margin-bottom: 20px;
+        }
+        &__btn{
+            button{
+                padding: 12px;
+                font-size: $base-font;
+            }
+        }
+    }
+
+    .hero-imagecontainer{
+        left: 32px;
+        padding-bottom: 30px;
+        img{
+            height: 196px;
+        }
+    }
+   }
+}
+
+
+
+
+
